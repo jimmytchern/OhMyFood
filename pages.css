@@ -91,6 +91,19 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
+@keyframes apparition {
+  0% {
+    transform: scale(0);
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 100%;
+  }
+}
 .menuItem_0 {
   padding: 1rem;
   margin: 1rem;
@@ -101,6 +114,10 @@
   overflow: hidden;
   cursor: pointer;
   max-width: 100%;
+  animation: apparition 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  transform: scale(0);
 }
 .menuItem_1 {
   padding: 1rem;
@@ -111,6 +128,10 @@
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
+  animation: apparition 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  transform: scale(0);
 }
 .menuItem_2 {
   padding: 1rem;
@@ -121,6 +142,10 @@
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
+  animation: apparition 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  transform: scale(0);
 }
 .menuItem_3 {
   padding: 1rem;
@@ -131,6 +156,10 @@
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
+  animation: apparition 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  transform: scale(0);
 }
 .menuItem_4 {
   padding: 1rem;
@@ -141,6 +170,10 @@
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
+  animation: apparition 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  transform: scale(0);
 }
 .menuItem_5 {
   padding: 1rem;
@@ -151,6 +184,10 @@
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
+  animation: apparition 3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  transform: scale(0);
 }
 .menuItem_6 {
   padding: 1rem;
@@ -161,6 +198,10 @@
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
+  animation: apparition 3.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  transform: scale(0);
 }
 .menuItem_7 {
   padding: 1rem;
@@ -171,6 +212,10 @@
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
+  animation: apparition 4s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  transform: scale(0);
 }
 .menuItem_8 {
   padding: 1rem;
@@ -181,6 +226,10 @@
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
+  animation: apparition 4.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  transform: scale(0);
 }
 .menuItem_description {
   margin: 0;
@@ -207,7 +256,7 @@
   justify-content: center;
   border-radius: 100px;
   transform: rotate(180deg);
-  transition-duration: 0.5s;
+  transition-duration: 0.8s;
 }
 .menuItem_wrapIcon:hover {
   transform: rotate(0);

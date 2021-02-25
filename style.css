@@ -2,6 +2,75 @@ body,
 html {
   font-family: "roboto", sans-serif;
 }
+@keyframes animationHeart {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes SpinLoader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(0, 5rem);
+  }
+  75% {
+    transform: translateY(-0, 5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.SpinLoader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: hsla(0, 0%, 100%, 0.9);
+  animation: SpinLoader 0.01s;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.LoaderItem {
+  animation-iteration-count: 1;
+  animation: jump 1s;
+  border-radius: 40px;
+  height: 40px;
+  width: 40px;
+}
+.SpinLoader_items {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+.SpinLoader_item1 {
+  background-color: #7c32d6;
+}
+.SpinLoader_item2 {
+  background-color: rgb(200, 115, 207);
+  animation-delay: 0.25s;
+}
+.SpinLoader_item3 {
+  background-color: rgb(39, 230, 166);
+  animation-delay: 0.5s;
+}
 .header {
   padding: 1rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 25);
@@ -44,6 +113,11 @@ html {
 .underLocal_btn:hover {
   background-color: #fff;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(
+    0deg,
+    rgba(147, 86, 220, 0.5),
+    rgba(255, 121, 218, 0.5)
+  );
 }
 .underLocal_btn {
   border: 0;
@@ -150,6 +224,10 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.menu_like:active {
+  fill: #9356dc;
+  animation: animationHeart 0.4s;
 }
 .fas {
   font-weight: 800;
