@@ -1,3 +1,8 @@
+@keyframes translate {
+  100% {
+    transform: translateX(-100px);
+  }
+}
 .header_logo {
   font-family: Shrikhand, "cursive";
   margin: 0;
@@ -75,9 +80,6 @@
 }
 .menuItem_title {
   margin: 0;
-}
-.menuItem:hover {
-  margin-right: -1rem;
 }
 .menuItem_header {
   white-space: nowrap;
@@ -242,7 +244,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding-left: 0, 5rem;
+  padding-right: 40px;
 }
 .menuItem_icon {
   color: #99e2d0;
@@ -263,16 +265,18 @@
 }
 .menuItem_confirmation {
   background-color: #99e2d0;
-  margin: -1rem -5rem -1rem 1rem;
-  width: 4rem;
+  width: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition-duration: 0.5s;
+  margin: -16px -16px -16px -16px;
+  overflow: hidden;
 }
 .menuItem_confirmation:hover {
-  margin-right: -1rem;
+  animation: translate 1s;
 }
+
 /*Bouton et footer*/
 .wrapBtn {
   display: flex;
