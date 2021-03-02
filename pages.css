@@ -49,11 +49,54 @@
 .menu_title {
   font-family: Shrikhand, "cursive";
 }
+.card_like {
+  background-color: #fff !important;
+}
 .menu_btn {
-  transition-duration: 0, 25s;
+  height: 2rem;
+  width: 2rem;
+  border: transparent 0px solid;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  position: relative;
+  background-color: #353535;
+}
+.menu_btn:hover::before {
+  opacity: 1;
+}
+.menu_btn::before {
+  opacity: 0;
+  transition: 0.8s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+}
+.menu_like {
+  transition-duration: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: lighten;
+  background-color: #f6f6f6 !important;
+  font-size: 30px;
+}
+.menu_like--noBg {
+  opacity: 1;
+}
+.fas {
+  font-weight: 800;
 }
 .submenus {
   display: grid;
@@ -302,6 +345,11 @@
 .commandBtn:hover {
   background-color: #fff;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(
+    0deg,
+    rgba(147, 86, 220, 0.5),
+    rgba(255, 121, 218, 0.5)
+  );
 }
 .footer .container {
   display: flex;
