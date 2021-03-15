@@ -298,9 +298,7 @@
   transform: rotate(180deg);
   transition-duration: 0.8s;
 }
-.menuItem_wrapIcon:hover {
-  transform: rotate(0);
-}
+
 .menuItem_confirmation {
   background-color: #99e2d0;
   width: 64px;
@@ -313,6 +311,9 @@
 }
 .cardMenu:hover .menuItem_confirmation {
   margin: -16px;
+}
+.cardMenu:hover .menuItem_wrapIcon {
+  transform: rotate(0);
 }
 
 /*Bouton et footer*/
