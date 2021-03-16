@@ -235,19 +235,8 @@ html {
   position: relative;
   background-color: #353535;
 }
-.menu_btn:hover::before {
-  opacity: 1;
-}
-.menu_btn::before {
+.offBg {
   opacity: 0;
-  transition: 0.8s;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
 }
 .menu_like {
   transition-duration: 0.5s;
@@ -259,11 +248,11 @@ html {
   left: 0;
   height: 100%;
   width: 100%;
-  mix-blend-mode: lighten;
-  background-color: #f6f6f6;
 }
-.menu_like--noBg {
+.menu_like:hover {
   opacity: 1;
+  color: #7c32d6;
+  transition-duration: 1.5s;
 }
 .menu_like:active {
   animation: animationHeart 0.4s;
