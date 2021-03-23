@@ -88,7 +88,6 @@ html {
   background-color: #f3f3f3;
   font-size: 1.2rem;
   position: relative;
-  width: 100%;
 }
 .local_text {
   font-weight: 700;
@@ -98,6 +97,7 @@ html {
 }
 .underLocal {
   padding: 2rem;
+  box-sizing: border-box;
   text-align: center;
   background-color: #fafafa;
   width: 100%;
@@ -124,7 +124,6 @@ html {
   border: 0;
   padding: 0.75rem 2rem;
   font-weight: 500;
-  font-size: 1.1rem;
   border-radius: 100px;
   color: #fff;
   background-image: linear-gradient(
